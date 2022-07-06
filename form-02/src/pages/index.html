@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 02 - Formulário de Cadastro</title>
+    <link rel="stylesheet" href="../styles/main.css">
+</head>
+<body>
+    <section>
+        <form action="/" method="POST">
+            <fieldset>
+                <label for="user-email">E-mail</label>
+                <input type="email" name="userEmail" id="user-email" placeholder="Digite seu e-mail" autocomplete="off">
+    
+                <label for="user-password">Senha</label>
+                <input type="password" name="userPassword" id="user-password" minlength="8" maxlength="32" placeholder="Digite sua senha">
+            </fieldset>
+
+            <input id="buttonSubmit" type="submit" value="Entrar">
+        </form>
+
+        <p>Esqueceu sua senha? <a href="#">Clique aqui</a></p>
+    </section>
+</body>
+</html>
