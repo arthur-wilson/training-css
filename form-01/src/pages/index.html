@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Básico</title>
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/main.css">
+</head>
+<body>
+    <h1>Criar conta</h1>
+    <form action="/" method="POST">  
+        <label for="userName">Nome completo:</label>
+        <input type="text" name="user_name" id="userName">
+        
+        <label for="userAge">Idade:</label>
+        <input type="number" name="user_age" id="userAge">
+        
+        <label for="userEmail">E-mail:</label>
+        <input type="email" name="user_email" id="userEmail">
+
+        <label for="userPassword">Senha:</label>
+        <input type="password" name="user_password" id="userPassword">
+
+        <label for="userPasswordConfirm">Confirmar senha:</label>
+        <input type="password" name="user_passwordConfirm" id="userPasswordConfirm">
+
+        <label for="playerName">Nome de Usuário:</label>
+        <input type="text">
+
+        <label for="occupation">Profissão</label>
+        <select name="player_occupation" id="occupation">
+            <option selected></option>
+            <option value="assassin">Assassino</option>
+            <option value="bard">Bardo</option>
+            <option value="witch">Bruxo</option>
+            <option value="hunter">Caçador</option>
+            <option value="cook">Cozinheiro</option>
+            <option value="blacksmith">Ferreiro</option>
+            <option value="warrior">Guerreiro</option>
+            <option value="thief">Ladrão</option>
+            <option value="wizard">Mago</option>
+            <option value="mercenary">Mercenário</option>
+            <option value="miner">Mineiro</option>
+            <option value="paladin">Paladino</option>
+            <option value="fisherman">Pescador</option>
+            <option calue="seller">Vendedor</option>
+        </select>
+
+        <input type="submit" value="Cadastrar">
+    </form>
+</body>
+</html>
