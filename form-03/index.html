@@ -9,21 +9,25 @@
 </head>
 <body>
     <form method="post">
-        <label for="userName">Usuário</label>
-        <input type="text" id="username" required autofocus>
+        <h1>Login</h1>
 
-        <label for="userPassword">Senha</label>
-        <input type="password" required>
+        <fieldset>
+            <label for="userName">Usuário</label>
+            <input type="text" id="username" required autofocus>
+    
+            <label for="userPassword">Senha</label>
+            <input type="password" id="userPassword" required>
+        </fieldset>
 
-        <div>
+        <div class="center">
             <a href="#">Esqueceu a senha?</a>
         </div>
-
-        <div>
-            Não possui uma conta? <a href="#">Criar conta</a>
-        </div>
         
-        <input type="submit">
+        <input type="submit" value="Fazer Login">
+
+        <div class="center">
+            Não possui uma conta? <a href="#" class="register">Criar conta</a>
+        </div>
     </form>
 </body>
 </html>
