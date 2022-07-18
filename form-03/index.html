@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="./styles/main.css">
+    <script src="code/preventSubmit.js" defer></script>
     <script src="code/changeLabelColor.js"></script>
 </head>
 <body>
@@ -14,7 +15,7 @@
         
         <fieldset>
             <label id="userName-label" for="userName">Usuário</label>
-            <input type="text" id="username" onfocusin="changeUserNameLabelColorEnabled()" onfocusout="changeUserNameLabelColorDisabled()" required autofocus>
+            <input type="text" id="userName" onfocusin="changeUserNameLabelColorEnabled()" onfocusout="changeUserNameLabelColorDisabled()" required autofocus>
             
             <label id="userPassword-label" for="userPassword">Senha</label>
             <input type="password" id="userPassword" onfocusin="changeUserPasswordLabelColorEnabled()" onfocusout="changeUserPasswordLabelColorDisabled()" required>
@@ -24,7 +25,7 @@
             <a href="#">Esqueceu a senha?</a>
         </div>
         
-        <input type="submit" value="Fazer Login">
+        <input id="formSubmit" type="submit" value="Fazer Login">
         
         <div class="center">
             Não possui uma conta? <a href="#" class="register">Criar conta</a>
