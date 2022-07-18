@@ -4,6 +4,11 @@
     text-align: center;
 }
 
+.label-onfocus {
+    color: rgb(30, 192, 78);
+    font-weight: 600;
+}
+
 body {
     font-family: sans-serif;
     min-height: 100vh;
@@ -59,6 +64,10 @@ input {
     border-bottom: 2px solid rgba(185, 185, 185, 0.5);
     margin-bottom: 15px;
     font-size: 16px;
+}
+
+label + input:focus {
+    border-color: rgb(30, 192, 78);
 }
 
 input[type=submit] {

@@ -6,17 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="./styles/main.css">
+    <script src="code/changeLabelColor.js"></script>
 </head>
 <body>
     <form method="post">
         <h1>Login</h1>
-
+        
         <fieldset>
-            <label for="userName">Usuário</label>
-            <input type="text" id="username" required autofocus>
-    
-            <label for="userPassword">Senha</label>
-            <input type="password" id="userPassword" required>
+            <label id="userName-label" for="userName">Usuário</label>
+            <input type="text" id="username" onfocusin="changeUserNameLabelColorEnabled()" onfocusout="changeUserNameLabelColorDisabled()" required autofocus>
+            
+            <label id="userPassword-label" for="userPassword">Senha</label>
+            <input type="password" id="userPassword" onfocusin="changeUserPasswordLabelColorEnabled()" onfocusout="changeUserPasswordLabelColorDisabled()" required>
         </fieldset>
 
         <div class="center">
@@ -24,7 +25,7 @@
         </div>
         
         <input type="submit" value="Fazer Login">
-
+        
         <div class="center">
             Não possui uma conta? <a href="#" class="register">Criar conta</a>
         </div>
